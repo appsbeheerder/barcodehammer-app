@@ -1,0 +1,272 @@
+/* Bingo — stijl voor de GitHub Pages-site.
+   Eén bestand voor alle pagina's en alle talen. Kleuren volgen de app:
+   #086681 is dezelfde teal als het startscherm en het app-icoon. */
+
+:root {
+  --teal: #086681;
+  --teal-donker: #05485c;
+  --teal-licht: #e6f2f6;
+  --tekst: #1a1a1a;
+  --grijs: #5a6a70;
+  --rand: #d6e2e7;
+  --groen: #1b8a3a;
+  --wit: #ffffff;
+  --breedte: 46rem;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--tekst);
+  background: var(--wit);
+}
+
+/* ---------- Kop ---------- */
+
+header.top {
+  background: var(--teal);
+  color: var(--wit);
+  padding: 2.5rem 1.25rem 2rem;
+}
+
+header.top .binnen {
+  max-width: var(--breedte);
+  margin: 0 auto;
+}
+
+header.top a { color: var(--wit); }
+
+.merk {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.merk img {
+  width: 68px;
+  height: 68px;
+  border-radius: 16px;
+  flex-shrink: 0;
+}
+
+.merk h1 {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: -0.01em;
+}
+
+.merk p {
+  margin: 0.2rem 0 0;
+  opacity: 0.9;
+  font-size: 1rem;
+}
+
+/* ---------- Navigatie ---------- */
+
+nav.hoofd {
+  max-width: var(--breedte);
+  margin: 0 auto;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+nav.hoofd a {
+  color: var(--teal-donker);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.2rem 0;
+  border-bottom: 2px solid transparent;
+}
+
+nav.hoofd a:hover,
+nav.hoofd a:focus { border-bottom-color: var(--teal); }
+
+nav.hoofd a[aria-current="page"] { border-bottom-color: var(--teal); }
+
+.talen {
+  margin-left: auto;
+  font-size: 0.85rem;
+  color: var(--grijs);
+}
+
+.talen a { font-weight: 500; }
+
+/* ---------- Inhoud ---------- */
+
+main {
+  max-width: var(--breedte);
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 4rem;
+}
+
+h2 {
+  margin-top: 2.5rem;
+  font-size: 1.4rem;
+  color: var(--teal-donker);
+  line-height: 1.3;
+}
+
+h3 {
+  margin-top: 1.75rem;
+  font-size: 1.1rem;
+  color: var(--teal-donker);
+}
+
+a { color: var(--teal); }
+
+ul, ol { padding-left: 1.3rem; }
+
+li { margin-bottom: 0.4rem; }
+
+.lead {
+  font-size: 1.1rem;
+  color: var(--grijs);
+}
+
+/* ---------- Blokken ---------- */
+
+.kader {
+  background: var(--teal-licht);
+  border: 1px solid var(--rand);
+  border-radius: 12px;
+  padding: 1.1rem 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.kader p:first-child { margin-top: 0; }
+.kader p:last-child { margin-bottom: 0; }
+
+.kader.nadruk {
+  background: #f2faf4;
+  border-color: #bfe3c9;
+}
+
+.kader.nadruk strong { color: var(--groen); }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25rem 0;
+  font-size: 0.95rem;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.6rem 0.7rem;
+  border-bottom: 1px solid var(--rand);
+  vertical-align: top;
+}
+
+th {
+  background: var(--teal-licht);
+  color: var(--teal-donker);
+  font-weight: 600;
+}
+
+code {
+  background: #f2f4f5;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.datum {
+  color: var(--grijs);
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+}
+
+/* ---------- Kenmerkenraster ---------- */
+
+.raster {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.kaartje {
+  border: 1px solid var(--rand);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+}
+
+.kaartje h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+}
+
+.kaartje p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--grijs);
+}
+
+/* ---------- Voet ---------- */
+
+footer {
+  border-top: 1px solid var(--rand);
+  padding: 1.75rem 1.25rem 3rem;
+  font-size: 0.9rem;
+  color: var(--grijs);
+}
+
+footer .binnen {
+  max-width: var(--breedte);
+  margin: 0 auto;
+}
+
+footer a { color: var(--teal); }
+
+/* ---------- Donkere modus ---------- */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --tekst: #e8edef;
+    --grijs: #a7b6bc;
+    --rand: #2c4048;
+    --teal-licht: #12313d;
+    --teal-donker: #7fc6dd;
+    --wit: #0e1a1f;
+  }
+
+  body { background: var(--wit); }
+
+  th { background: #12313d; }
+
+  code { background: #17262c; }
+
+  .kader.nadruk {
+    background: #102a1a;
+    border-color: #26543a;
+  }
+
+  .kader.nadruk strong { color: #6ede8f; }
+
+  nav.hoofd a { color: var(--teal-donker); }
+}
+
+/* ---------- Toegankelijkheid ---------- */
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--teal-donker);
+  outline-offset: 2px;
+}
+
+@media (max-width: 30rem) {
+  .merk h1 { font-size: 1.55rem; }
+  .talen { margin-left: 0; width: 100%; }
+}

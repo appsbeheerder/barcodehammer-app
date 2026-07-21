@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Barcodehammer</title>
+<meta name="description" content="Help with Barcodehammer: frequently asked questions and contact.">
+<link rel="canonical" href="https://appsbeheerder.github.io/barcodehammer-app/en/support.html">
+<link rel="alternate" hreflang="nl" href="https://appsbeheerder.github.io/barcodehammer-app/support.html">
+<link rel="alternate" hreflang="en" href="https://appsbeheerder.github.io/barcodehammer-app/en/support.html">
+<link rel="alternate" hreflang="es" href="https://appsbeheerder.github.io/barcodehammer-app/es/support.html">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="binnen">
+    <div class="merk">
+      <div>
+        <h1>Support</h1>
+        <p>Barcodehammer — read and create barcodes, offline</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="hoofd" aria-label="Support">
+  <a href="./">About</a>
+  <a href="privacy.html">Privacy policy</a>
+  <a href="support.html" aria-current="page">Support</a>
+  <a href="terms.html">Terms of use</a>
+  <span class="talen">Language: <a href="../support.html">Nederlands</a> · <strong>English</strong> · <a href="../es/support.html">Español</a></span>
+</nav>
+
+<main>
+
+<h2>Need help?</h2>
+<p>Send a message to <a href="mailto:appsbeheerder@lichtgolf.nl">appsbeheerder@lichtgolf.nl</a>. Please mention which
+device you use, which version of the app (shown at the bottom of the settings)
+and what exactly went wrong.</p>
+
+<h2>Frequently asked questions</h2>
+
+<h3>The app does not scan my code</h3>
+<p>Check whether it is a format that can be read — see the list on the
+<a href="./">home page</a>. Make sure there is enough light, hold the device
+steady, and fill the viewfinder with the code without getting too close.</p>
+
+<h3>I created a code but the app will not read it back</h3>
+<p>Seven formats can be created but not read: EAN-2, EAN-5, GS1-128, Telepen and
+RM4SCC, plus ISBN and ITF-14 — those last two <em>are</em> read, but the app
+calls them EAN-13 and ITF, because technically that is what they are. The app
+warns you about this when you pick the format.</p>
+
+<h3>Why does the app add a digit to my EAN?</h3>
+<p>That is the check digit. An EAN-13 consists of twelve digits plus a
+thirteenth calculated from the other twelve. If you type it yourself, the app
+verifies it instead of adding one.</p>
+
+<h3>Where is my history stored?</h3>
+<p>Encrypted on your own device, in the app's private folder. Nothing goes to a
+server. You can delete entries individually or all at once.</p>
+
+<h3>Can I get my history back after "delete all"?</h3>
+<p>No. That action also replaces the key, precisely so that nothing can be
+recovered. That is why it asks for confirmation first.</p>
+
+</main>
+
+<footer>
+  <div class="binnen">
+    <p>Barcodehammer is made by Eric M. Kok. ·
+    <a href="./">About</a> ·
+    <a href="privacy.html">Privacy policy</a> ·
+    <a href="terms.html">Terms of use</a></p>
+    <p>These pages are published openly on GitHub Pages: <a href="https://appsbeheerder.github.io/barcodehammer-app/">appsbeheerder.github.io/barcodehammer-app</a> — readable without installing the app.</p>
+  </div>
+</footer>
+
+</body>
+</html>
